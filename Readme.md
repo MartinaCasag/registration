@@ -18,8 +18,8 @@ Before running make sure to have locally:
 Run:
 - `$ git clone https://github.com/MartinaCasag/registration.git`
 - `$ cd registration`
-- `$ python -m pip install matplotlib SimpleITK`
-- `$ python src/image_registration.py`
+- `$ python3 -m pip install matplotlib SimpleITK`
+- `$ python3 src/image_registration.py`
 
 ## Results
 ### CT
