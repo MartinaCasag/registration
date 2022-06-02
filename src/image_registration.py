@@ -29,8 +29,8 @@ def multires_registration(fixed_image, moving_image, initial_transform):
     return final_transform, registration_method.GetMetricValue()
 
 
-img1 = sitk.ReadImage('../assets/ct/training_001_ct.mhd', sitk.sitkFloat32) #fixed image
-img2 = sitk.ReadImage('../assets/mr_T2/training_001_mr_T2.mhd', sitk.sitkFloat32) #moving image
+img1 = sitk.ReadImage("../assets/ct/training_001_ct.mhd", sitk.sitkFloat32) #fixed image
+img2 = sitk.ReadImage("../assets/mr_T2/training_001_mr_T2.mhd", sitk.sitkFloat32) #moving image
 
 #set initial transform
 initial_transform = sitk.CenteredTransformInitializer(img1, img2, sitk.Euler3DTransform())
